@@ -5,7 +5,7 @@ services:
     container_name: portainer
     command: -H unix:///var/run/docker.sock
     ports:
-      - "9000:9000"
+      - "9100:9100"
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock"
       - "portainer_data:/data"
